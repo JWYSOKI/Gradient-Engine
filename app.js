@@ -5,12 +5,18 @@ $('#run').click(getColor1)
 
 $('#copyCode').click(copyCode)
 
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
 
 var choices = [0,1,2,3,4,5,6,7,8,9,"a","b","c","d","e","f"];
 var color1 = "#";
 var color2 = "#";
 
 function getColor1(){
+	color1 = "#"
+	color2 = "#"
 	for (var i = 0;i<6;i++){
 		var char = Math.floor(Math.random()*choices.length)
 		color1 += choices[char]
@@ -41,8 +47,7 @@ function changeBg(){
 		backgroundRepeat:'no repeat'
 	});
 	$('#outcome').val(bg)
-	color1 = "#"
-	color2 = "#"
+
 }
 
 
