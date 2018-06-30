@@ -26,9 +26,26 @@ main{
 
 }
 
+#outcome{
+	width: 20%;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 1%;
+}
 
 #run{
 	font-size: 200%;
+	background:transparent;
+	border: none;
+}
+
+#run:hover{
+	text-shadow: 4px 4px 6px rgba(0, 0, 0, 1);
+}
+
+#run:focus{
+	border:none;
+	outline:none;
 }
 
 

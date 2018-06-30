@@ -1,14 +1,11 @@
-// Add event listener to button that calls the getColor function
 
 $(document).ready(getColor1)
 
 $('#run').click(getColor1)
 
+$('#copyCode').click(copyCode)
 
 
-// Generate two random colors
-
-// An array of all possible hex characters
 var choices = [0,1,2,3,4,5,6,7,8,9,"a","b","c","d","e","f"];
 var color1 = "#";
 var color2 = "#";
@@ -43,19 +40,31 @@ function changeBg(){
 		background:bg,
 		backgroundRepeat:'no repeat'
 	});
-	$('#outcome').text(bg)
+	$('#outcome').val(bg)
 	color1 = "#"
 	color2 = "#"
 }
 
 
 
+function copyCode() {
+  /* Get the text field */
+  var copyText = $('input');
 
-// Set the colors of the boxes to those random colors
+  /* Select the text field */
+  copyText.select();
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+}
 
 
 
 
 
 
-// Change the background color of the page to a gradient of the two random colors
+
+
+
+
