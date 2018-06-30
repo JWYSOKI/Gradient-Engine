@@ -1,0 +1,35 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main{
+	margin-top: 5%;
+}
+
+
+.box{
+	height: 300px;
+	width: 50%;
+	float: left;
+	margin-top:10%;
+	margin-bottom:3%;
+	-webkit-box-shadow: 19px 35px 35px 4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 19px 35px 35px 4px rgba(0,0,0,0.75);
+	box-shadow: 19px 35px 35px 4px rgba(0,0,0,0.75);
+
+}
+
+
+#run{
+	font-size: 200%;
+}
+
+
+
